@@ -12,10 +12,6 @@ import { FormlyAutocompleteFreetextModule } from './demos/freetext/autocomplete-
 import { FormlyAutocompleteFreetext } from './demos/freetext/autocomplete-freetext.component';
 import { FormlyAutocompleteTag } from './demos/tag/autocomplete-tag.component';
 import { FormlyAutocompleteTagModule } from './demos/tag/autocomplete-tag.module';
-import { FormlyAutocompleteReadOnlyModule } from './demos/readonly/autocomplete-readonly.module';
-import { FormlyAutocompleteReadOnly } from './demos/readonly/autocomplete-readonly.component';
-import { FormlyAutocompleteMinCharecter } from './demos/mincharecter/autocomplete-mincharecter.component';
-import { FormlyAutocompleteMinCharecterModule } from './demos/mincharecter/autocomplete-mincharecter.module';
 import { FormlyAutocompleteDisable } from './demos/disable/autocomplete-disable.component';
 import { FormlyAutocompleteDisableModule } from './demos/disable/autocomplete-disable.module';
 
@@ -42,20 +38,7 @@ const DEMOS = {
     markup: require('!!raw-loader!./demos/tag/autocomplete-tag.component.html'),
     path: 'libs/documentation/src/lib/components/autocomplete/demos/tag'
   },
-  readonly: {
-    title: 'Autocomplete with input read only',
-    type: FormlyAutocompleteReadOnly,
-    code: require('!!raw-loader!./demos/readonly/autocomplete-readonly.component'),
-    markup: require('!!raw-loader!./demos/readonly/autocomplete-readonly.component.html'),
-    path: 'libs/documentation/src/lib/components/autocomplete/demos/readonly'
-  },
-  mincharecter: {
-    title: 'Autocomplete with Minimum charecter count',
-    type: FormlyAutocompleteMinCharecter,
-    code: require('!!raw-loader!./demos/mincharecter/autocomplete-mincharecter.component'),
-    markup: require('!!raw-loader!./demos/mincharecter/autocomplete-mincharecter.component.html'),
-    path: 'libs/documentation/src/lib/components/autocomplete/demos/mincharecter'
-  },
+ 
   disable: {
     title: 'Autocomplete with disable',
     type: FormlyAutocompleteDisable,
@@ -97,8 +80,6 @@ export const ROUTES = [
     FormlyAutocompleteBasicModule,
     FormlyAutocompleteFreetextModule,
     FormlyAutocompleteTagModule,
-    FormlyAutocompleteReadOnlyModule,
-    FormlyAutocompleteMinCharecterModule,
     FormlyAutocompleteDisableModule
   ]
 })
